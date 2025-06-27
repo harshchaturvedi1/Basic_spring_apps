@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="dev" class="org.example.Dev">
+<!--        setter injection-->
+<!--        <property name="age" value="12" />-->
+<!--        <property name="laptop" ref="laptop1"/>-->
+<!--        <property name="comp" ref="laptop1"/>-->
+        <property name="comp" ref="desktop1"/>
+    </bean>
+
+    <bean id="dev1" class="org.example.Dev" />
+    <bean id="laptop1" class="org.example.Laptop" />
+    <bean id="desktop1" class="org.example.Desktop" />
+</beans>

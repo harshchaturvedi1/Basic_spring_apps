@@ -1,0 +1,53 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+
+# Compiled files
+target/
+bin/
+
+# Maven
+.mvn/
+.settings/
+dependency-reduced-pom.xml
+
+# IntelliJ / Eclipse / VSCode IDE files
+*.iml
+.idea/
+.project
+.classpath
+.settings/
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Test output
+test-output/
+
+# Spring Boot devtools
+.spring-boot-devtools.properties
+
+# Local database
+*.h2.db
+*.mv.db
+
+# Others
+*.swp
+*.bak.DS_Store
+
+# macOS
+.DS_Store
+
+# Maven Wrapper
+mvnw
+mvnw.cmd
+
+# Maven build
+target/
