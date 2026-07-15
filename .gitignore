@@ -40,14 +40,27 @@ test-output/
 
 # Others
 *.swp
-*.bak.DS_Store
-
-# macOS
-.DS_Store
+*.bak
 
 # Maven Wrapper
 mvnw
 mvnw.cmd
 
-# Maven build
-target/
+# Node / UI (React, Angular, Vue, etc.)
+node_modules/
+dist/
+build/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.env
+.env.local
+.env.*.local
+.parcel-cache/
+.cache/
+.eslintcache
