@@ -35,7 +35,7 @@ public class Dev {
 
 
     @Autowired
-    @Qualifier("desktop") // name of class will be in small laters
+    @Qualifier("desktop") // name of class will be in small letters
     private Computer comp;
 
     public void build() {
