@@ -1,6 +1,7 @@
 package com.telusko.myApp;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -25,15 +26,21 @@ public class Dev {
 //    }
 
     //    setter injection
-    private Laptop laptop;
+//    private Laptop laptop;
+//
+//    @Autowired
+//    public void setLaptop(Laptop laptop) {
+//        this.laptop = laptop;
+//    }
+
 
     @Autowired
-    public void setLaptop(Laptop laptop) {
-        this.laptop = laptop;
-    }
+    @Qualifier("desktop") // name of class will be in small laters
+    private Computer comp;
 
     public void build() {
-        laptop.compile();
+//        laptop.compile();
+        comp.compile();
         System.out.println("Working on awesome project");
     }
 
